@@ -1,6 +1,7 @@
 package Diego_Alejandro_202406567.Diego_Alejandro_202406567.Models.Dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -13,16 +14,14 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class LibrosDTO {
     private Long id;
-    @NotBlank
+    @NotNull
     private String titulo;
-    @NotBlank
+    @NotNull
     private String isdn;
-    @NotBlank
+    @NotNull
     private int año_publicacion;
-    @NotBlank
+    @NotNull
     private String genero;
-    @NotBlank
+    @NotNull
     private Long autor_id;
-
-    @Positive(message = "ressdfd")
 }
